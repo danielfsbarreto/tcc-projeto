@@ -1,22 +1,13 @@
-%=======================================================================
-% Template para projeto de pesquisa
-% Programa de Pós Graduação em Informática Aplicada da Universidade Federal 
-% Rural de Pernambuco
-%=======================================================================
 \documentclass[a4paper,11pt]{article}
 \usepackage[left=3.0cm,right=2.5cm,top=3.0cm]{geometry}
-%espaçamento entre parágrafos
 \setlength{\parindent}{.0in}
 \parskip 10pt        
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
-%% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
-%% The amsthm package provides extended theorem environments
 \usepackage{amsthm}
 \usepackage{hyperref}
 \usepackage{color}
-%\usepackage{backref}
 \usepackage{graphicx}
         
 \newcommand{\D}{\displaystyle}
@@ -30,14 +21,9 @@
 \newcommand\JC[1]{{\color{red} #1}}
 \newcommand\AO[1]{{\color{green} #1}}
 
-
-
-
 \begin{document}
 \pagestyle {empty}
 
-
-%início da capa
 \vspace*{-2cm}
 \begin{figure}[h]
 \leavevmode
@@ -63,56 +49,57 @@
 \vspace*{2.0cm}
 \begin{center}
 
-
 {\Large \bf  Projeto de Conclusão de Curso}\\[1cm]
-{\Large \bf Título:kjgktjgkt} \\[3cm]
+{\Large \bf Título: Um Estudo sobre Desafios e Benefícios na Adoção de Métodos Ágeis por Organizações de Software} \\[3cm]
 \end{center}
-{\Large  Estudante: Fulano de tal}\\[6mm]
-{\Large  Orientador: }\\[6mm]
-
-
+{\Large  Estudante: Daniel Filype Silva Barreto}\\[6mm]
+{\Large  Orientador: Teresa Maciel}\\[6mm]
 
 \vspace{3.0cm}
 \begin{center}
 {\large {\bf Recife}\\[6mm]
-Novembro de 2013}
+Janeiro de 2014}
 \end{center}
 \newpage
 
+\newpage
 \pagestyle {plain}
 \setcounter{page}{0} \pagenumbering{arabic}
 
-Para elaborar seu projeto de pesquisa consulte \cite{Silva05}. 
+\section{Introdução}
+\subsection{Apresentação}
+O Manifesto Ágil \cite{agileManifesto}, criado em 2001, revolucionou o mercado de Tecnologia da Informação, pois, até então, a maneira de se desenvolver software mostrou-se falha em diversos aspectos. Contudo, a transição entre o modelo antigo (conhecido como "cascata") e o moderno (conhecido como "ágil") é uma tarefa não-trivial.
 
+As principais motivações por trás da adoção ágil de desenvolvimento de software são: a melhoria da qualidade do produto final, aumento da moral dos desenvolvedores e satisfação do cliente. Entretanto, adoção ágil sempre vem com desafios especiais e, para que ela ocorra com sucesso, mudanças fundamentais na cultura da organização são necessárias \cite{Hassan2011}. Este projeto visa expor desafios e lições aprendidas por empresas brasileiras de desenvolvimento de software que passaram por este processo.
+\subsection{Justificativas}
+Muitas abordagens diferentes podem ser aplicadas a desenvolvimento de software \cite{Kettunen2010}, cada uma com suas peculiaridades. De acordo com \cite{Shore2007}, metodologias denominadas ágeis tornaram-se bastante populares, sendo utilizadas por grandes corporações como: Google, Yahoo!, Symantec, Microsoft, etc. Entretanto, não existe bala de prata no que tange a desenvolvimento de software. Não se deve simplesmente aplicá-las porque são populares. Existem vários estudos na literatura que mostram casos falhos de adoção de métodos ágeis \cite{Krasteva2008}. É preciso entender a fundo estas novas metodologias, analisar seus pontos positivos e negativos e, principalmente, refletir se elas agregariam valor ao produto final a ser entregue.
 
-\section{Apresentação}
-Definição e contextualização do problema a ser resolvido.
-\section{Relevância}
-Qual a importância ou relevância do tema?  Qual a contribuição para o meio acadêmico e para a sociedade do desenvolvimento desta pesquisa? Qual a vantagem em relação aos trabalhos relacionados?
-\section{Objetivos}
-\subsection{Objetivo Geral}
-Indicar de forma genérica qual o objetivo principal a ser alcançado. Deve ser claro e conciso.
-\subsection{bla}
-Detalhar o objetivo geral mostrando o que se pretende alcançar. Tornar operacional o objetivo geral, indicando exatamente o que será realizado visando a atingir o mesmo.
-Os objetivos devem iniciar sempre com um verbo no infinitivo: Proporcionar, Elaborar, Apresentar, Desenvolver, Aplicar, Conhecer, Identificar, etc.
+Sendo assim, é de suma importância a coleta de experiências para que se possa aprender sobre esta transição com aqueles que já passaram por este processo e que, além disso, querem contribuir com a comunidade de desenvolvimento de software.
+\subsection{Objetivos}
+\subsubsection{Objetivo Geral}
+\begin{itemize}
+	\item Disponibilizar um conjunto de benefícios e desafios mais relatados na adoção do desenvolvimento ágil por organizações de software.
+\end{itemize}
+\subsubsection{Objetivos Específicos}
+\begin{itemize}
+	\item Investigar, através de pesquisa exploratória, a necessidade e contribuição de trabalhos desta natureza.
+	\item Adquirir conhecimento sobre fundamentos teóricos relacionados como desenvolvimento ágil de software e lean.
+	\item Realizar uma revisão utilizando como base a metodologia de Revisão Sistemática \cite{Barbara2004} para coletar lições aprendidas provenientes de trabalhos publicados pela comunidade científica.
+	\item Realizar uma pesquisa exploratória para coletar lições aprendidas provenientes de trabalhos publicados pela indústria de software nas principais conferências neste contexto.
+	\item Identificar um conjunto de benefícios e desafios mais citados a partir dos resultados das pesquisas realizadas.
+	\item Validar o trabalho realizado através de métodos de validação de Survey [ref], a partir da aplicação de questionários e entrevistas com especialistas nacionais reconhecidos na área, assim como em empresas que adotam o desenvolvimento ágil.
+	\item Realizar um protótipo de um banco de dados de lições aprendidas para acesso livre pela comunidade de software.
+\end{itemize}
+\subsection{Organização do Trabalho}
+Este trabalho é composto por mais quatro seções. Na Seção 2 está exposto uma introdução sobre metodologias ágeis. Na seção 3,  encontra-se o detalhamento da metodologia usada para realização do trabalho. O cronograma do projeto está exposto na sessão 4. Finalizando, encontram-se as referências bibliográficas de todo o material consultado para a realização deste documento.
 
-\section{Referencial Teórico  (Estado da arte, revisão da literatura, revisão bibliográfica)} 
-Deve-se realizar uma análise bibliográfica do que já foi escrito sobre o tema da sua pesquisa. Relacionar e distinguir o que já foi publicado (livros e revistas científicas) com o que está sendo proposto.
+\section{Desenvolvimento Ágil de Software}
 
-\section{Metodologia (materiais e métodos)}  
-descrever como será realizado o trabalho, ou seja, quais os mecanismos utilizados e qual a forma da apresentação final.  Indicar como serão coletadas as informações (dados, entrevistas, etc.). Pela Metodologia ou procedimentos metodológicos, você deverá responder como? Onde? (Com que?) será desenvolvido o trabalho
+\section{Metodologia}
 
-\section{Cronograma}  
-Identifica o período em que será realizada cada etapa da pesquisa. Pode ser apresentado em forma de tabela.
+\section{Cronograma}
 
-
-
-
-%incluir as referencias bibiográfica
 \bibliographystyle{plain}
 \bibliography{referencias}
 
-
 \end{document}
-
-
