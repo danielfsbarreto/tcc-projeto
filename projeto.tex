@@ -9,6 +9,10 @@
 \usepackage{hyperref}
 \usepackage{color}
 \usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{float}
+\usepackage[table]{xcolor}
         
 \newcommand{\D}{\displaystyle}
 \newcommand{\mc}{\multicolumn}
@@ -64,6 +68,8 @@ Janeiro de 2014}
 \end{center}
 \newpage
 
+\tableofcontents
+
 \newpage
 \pagestyle {plain}
 \setcounter{page}{0} \pagenumbering{arabic}
@@ -89,8 +95,8 @@ Sendo assim, é de suma importância a coleta de experiências para que se possa
 	\item Realizar uma revisão utilizando como base a metodologia de Revisão Sistemática \cite{Barbara2004} para coletar lições aprendidas provenientes de trabalhos publicados pela comunidade científica.
 	\item Realizar uma pesquisa exploratória para coletar lições aprendidas provenientes de trabalhos publicados pela indústria de software nas principais conferências neste contexto.
 	\item Identificar um conjunto de benefícios e desafios mais citados a partir dos resultados das pesquisas realizadas.
-	\item Validar o trabalho realizado através de métodos de validação de survey [ref], a partir da aplicação de questionários e entrevistas com especialistas nacionais reconhecidos na área, assim como em empresas que adotam o desenvolvimento ágil.
-	\item Realizar um protótipo de um banco de dados de lições aprendidas para acesso livre pela comunidade de software.
+	\item Validar o trabalho realizado através de metodologias de survey, aplicando-se questionários e entrevistas com especialistas nacionais reconhecidos na área, assim como em empresas que adotam o desenvolvimento ágil.
+	\item Gerar um protótipo de um banco de dados de lições aprendidas para acesso livre pela comunidade de software.
 \end{itemize}
 \subsection{Organização do Trabalho}
 Este trabalho é composto por mais quatro seções. Na Seção 2 está exposto uma introdução sobre metodologias ágeis. Na seção 3,  encontra-se o detalhamento da metodologia usada para realização do trabalho. O cronograma do projeto está exposto na sessão 4. Finalizando, encontram-se as referências bibliográficas de todo o material consultado para a realização deste documento.
@@ -133,40 +139,60 @@ O projeto será realizado seguindo uma metodologia dividida em diversas etapas:
 
 		\item Elaboração das questões de pesquisa:
 
-			\textnormal{A partir do conhecimento adquirido no estudo realizado no item anterior, serão elaborados os questionamentos que serão levantados pelas pesquisas subsequentes e validados por profissionais atuantes no mercado de Tecnologia da Informação do Brasil.}
+			\textnormal{A partir do conhecimento adquirido no estudo realizado no item anterior, serão elaborados os questionamentos que serão levantados pelas pesquisas subsequentes e validados por profissionais atuantes no mercado brasileiro de Tecnologia da Informação.}
 
 		\item Fundamentação teórica (métodos ágeis, lean, adoção ágil, etc.):
 
 			\textnormal{Fase de estudo exploratório sobre metodologias ágeis, lean e o contexto envolvido na transição de uma empresa de software para adoção dos mesmos. Serão analisados aspectos relevantes do contexto a ser explorado relatados em livros e conferências para um melhor entendimento do assunto.}
 
-		\item Investigação de desafios e lições aprendidas  a partir de publicações científicas (protocolo baseado em revisão sistemática):
+		\item Investigação de desafios e lições aprendidas  a partir de publicações científicas:
 
-			\textnormal{}
+			\textnormal{Utilizando um protocolo de pesquisa baseado na metodologia de revisão sistemática proposta por \cite{Barbara2004}, serão investigados artigos científicos publicados na literatura que relatem o processo de adoção ágil de empresas de desenvolvimento de software ao redor do mundo. Os desafios e lições aprendidas encontrados serão devidamente coletados e mapeados.}
 
-		\item Investigação de desafios e lições aprendidas  a partir de relatos de experiências publicados nas principais conferências (revisão exploratória):
+		\item Investigação de desafios e lições aprendidas  a partir de relatos de experiência:
 
-			\textnormal{}
+			\textnormal{Assim como na etapa anterior, relatos publicados nas principais conferências de engenharia de software serão analisados. Neste caso, será utilizada uma metodologia de revisão exploratória.}
 
-		\item Consolidação dos resultados obtidos das revisões, análise de similaridades, categorização, etc. (análise qualitativa):
+		\item Consolidação dos resultados obtidos das revisões, análise de similaridades e categorização:
 
-			\textnormal{}
+			\textnormal{Após ter sido feito o mapeamento dos dados coletados através da análise de publicações científicas e relatos de experiência, suas similaridades serão devidamente mapeadas e categorizadas através de uma análise qualitativa. O produto final desta etapa servirá como base para a elaboração do questionário da etapa seguinte.}
 
-		\item Validação da análise realizada a partir de um questionário e entrevistas com especialistas e empresas (seguindo um método de survey):
+		\item Questionário e entrevistas com especialistas e empresas:
 
-			\textnormal{}
+			\textnormal{O propósito desta etapa é validar o material fruto das análises feitas anteriormente. O questionário será elaborado seguindo uma metodologia de survey a ser definida.}
 
-		\item Protótipo de um website cujo propósito é servir como um repositório de lições aprendidas que poderá ser acessado por toda a comunidade de desenvolvimento de software:
+		\item Protótipo de um repositório de lições aprendidas:
 
-			\textnormal{}
+			\textnormal{Etapa em que será criado um protótipo de um website cujo propósito é compilar os principais achados desta pesquisa e disponibilizá-lo em um único local. Todos da comunidade de desenvolvimento de software interessados pelo assunto poderão acessá-lo, tanto seu conteúdo como o código-fonte.}
 
 		\item Análise geral do trabalho e identificação de trabalhos futuros:
 
-			\textnormal{}
+			\textnormal{Fase de reflexão e análise para geração de possíveis trabalhos de pós-graduação.}
 
 \end{list}
 
 \section{Cronograma}
 
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| p{8cm} | c | c | c | c | c |} \hline
+	\multirow{2}{*}{\textbf{Atividades}} & \multicolumn{2}{c |}{\textbf{2013}} & \multicolumn{3}{c |}{\textbf{2014}} \\ \cline{2-6}
+		& \textbf{N} & \textbf{D} & \textbf{J} & \textbf{F} & \textbf{M} \\
+		\hhline{------}
+		E1. Estudo exploratório sobre desenvolvimento ágil para identificação do objetivo do trabalho & \cellcolor{blue!60} & & & & \\ \cline{1-1}
+		E2. Elaboração das questões de pesquisa & \cellcolor{blue!60} & & & & \\ \cline{1-1}
+		E3. Fundamentação teórica (métodos ágeis, lean, adoção ágil, etc.) & & \cellcolor{blue!60} & & & \\ \cline{1-1}
+		E4. Investigação de desafios e lições aprendidas  a partir de publicações científicas & & & \cellcolor{blue!60} & & \\ \cline{1-1}
+		E5. Investigação de desafios e lições aprendidas  a partir de relatos de experiência & & & \cellcolor{blue!60} & & \\ \cline{1-1}
+		E6. Consolidação dos resultados obtidos das revisões, análise de similaridades e categorização & & & & \cellcolor{blue!60} & \\ \cline{1-1}
+		E7. Questionário e entrevistas com especialistas e empresas & & & & \cellcolor{blue!60} & \\ \cline{1-1}
+		E8. Protótipo de um repositório de lições aprendidas & & & & & \cellcolor{blue!60} \\ \cline{1-1}
+		E9. Análise geral do trabalho e identificação de trabalhos futuros & & & & & \cellcolor{blue!60} \\ \hline
+	\end{tabular}
+\end{table}
+
+\newpage
+\addcontentsline{toc}{section}{Referências}
 \bibliographystyle{plain}
 \bibliography{referencias}
 
